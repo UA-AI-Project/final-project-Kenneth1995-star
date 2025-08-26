@@ -1,0 +1,22 @@
+# Ignore OS/IDE files
+.DS_Store
+.vscode/
+
+# Ignore Python-specific files and virtual environments
+__pycache__/
+*.pyc
+env/
+.venv/
+conda-env/
+
+# Ignore large data folder
+data/
+
+# Ignore input CSVs (you do not want to push these)
+train_interactions.csv
+test_interactions_in.csv
+games.csv
+
+# Ignore Libreco/TensorFlow artifacts
+libreco_model_ckpt/
+

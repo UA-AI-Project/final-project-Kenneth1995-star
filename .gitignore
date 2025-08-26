@@ -1,0 +1,35 @@
+# Here, I am telling Git to ignore files and folders created by the operating system.
+.DS_Store
+.vscode/
+
+# Here, I am ignoring Python-specific files and virtual environments.
+__pycache__/
+*.pyc
+env/
+.venv/
+conda-env/
+
+# Here, I am ignoring the data directory because it contains large files and is a key output destination.
+# Instead of storing data on GitHub, I will provide instructions in the README on where to get it.
+data/
+
+# Here, I am explicitly ignoring the input and output CSV files from your project.
+# The `data/` rule above already covers these, but it is good practice to be explicit.
+# I am ignoring the data so the repository only contains the code to process it.
+train_interactions.csv
+test_interactions_in.csv
+games.csv
+rq2_eval_summary.csv
+rq2_alpha_sweep.csv
+rq2_top20_deepfm_hybrid.csv
+
+# Here, I am ignoring the generated plots.
+# The code generates these, so they do not need to be version controlled.
+rq2_accuracy_bars.png
+rq2_coverage_diversity_bars.png
+rq2_pop_bias.png
+rq2_hybrid_alpha_sweep.png
+
+# Here, I am ignoring Libreco/TensorFlow related artifacts.
+# These are temporary files and caches that are created during model training.
+libreco_model_ckpt/

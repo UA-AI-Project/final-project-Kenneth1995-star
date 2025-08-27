@@ -1,0 +1,7 @@
+pandas
+numpy
+matplotlib
+tqdm
+scikit-learn
+libreco
+tensorflow # The specific version might depend on your system, so you may need to specify it.
